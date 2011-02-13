@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	android:orientation="horizontal" android:padding="5dp">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:layout_weight="1"
+		android:gravity="center_vertical">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_weight="1">
+			<LinearLayout android:id="@+id/LinearLayout02"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:orientation="horizontal" android:layout_weight="1">
+				<TextView android:id="@+id/pColor" android:layout_width="40dip"
+					android:layout_height="40dip" android:background="#ff333333"
+					android:text="prev" android:layout_weight="1" />
+				<TextView android:layout_height="40dip" android:id="@+id/nColor"
+					android:layout_width="40dip" android:background="#ff330033"
+					android:text="next" android:layout_weight="1" />
+			</LinearLayout>
+
+			<TextView android:id="@+id/colorCode" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_weight="1"
+				android:textSize="20sp" android:textStyle="bold" />
+
+			<LinearLayout android:id="@+id/LinearLayout01"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:orientation="vertical" android:layout_weight="1">
+				<TextView android:id="@+id/colorRGB" android:text="RGB:"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_weight="1" android:textSize="10sp" />
+				<TextView android:id="@+id/colorHSV" android:text="HSV:"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_weight="1" android:textSize="10sp" />
+				<TextView android:id="@+id/colorYUV" android:text="YUV:"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_weight="1" android:textSize="10sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:gravity="bottom" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="horizontal"
+			android:layout_weight="2">
+			<Button android:id="@+id/ok" android:text="OK"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" android:textSize="10sp"/>
+			<Button android:id="@+id/ng" android:text="Cancel" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" android:textSize="10sp"/>
+		</LinearLayout>
+	</LinearLayout>
+	<org.superdry.util.colorpicker.lib.SuperdryColorPickerView
+		android:id="@+id/colorView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:layout_margin="5dp" />
+</LinearLayout>
